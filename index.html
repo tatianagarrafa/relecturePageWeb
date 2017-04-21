@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="fr">
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>PROGRAMME - TIM</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+
+		 <!-- CSS
+		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		<link href="css/reset.css" rel="stylesheet" type="text/css"/>
+		<!--		CSS pour mobile _base.css
+				–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		<link rel="stylesheet" type="text/css" href="css/_base.css">
+		<!--		CSS pour l'écran de min-width 480px
+				–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		<link rel="stylesheet" media="screen and (min-width: 480px)" href="css/_480.css" type="text/css" />
+		<!--		CSS pour l'écran de min-width 600px
+				–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		<link rel="stylesheet" media="screen and (min-width: 600px)" href="css/_600.css" type="text/css" />
+		<!--		CSS pour l'écran de min-width 800px (bigger than)
+				–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		<link rel="stylesheet" media="screen and (min-width: 800px)" href="css/_800.css" type="text/css" />
+		<!--		CSS pour l'écran de min-width 1100px
+				–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		<link rel="stylesheet" media="screen and (min-width: 1100px)" href="css/_1100.css" type="text/css" />
+		<!--		CSS btn burger
+				–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		<link rel="stylesheet" type="text/css" href="css/_burger.css">
+		<!--		CSS flip
+				–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		<link rel="stylesheet" href="css/flip.css" type="text/css" />
+		<!--		CSS anim ecrire
+				–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		<link rel="stylesheet" href="css/anim_ecrire.css" type="text/css" />
+		<!-- Icons
+		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		<link rel="stylesheet" href="fonts-awesome/css/font-awesome.min.css">
+
+		<!-- Fonts
+		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+		<!-- JS
+		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		<script src="script/jquery-1.7.2.min.js"></script>
+		<script src="script/application.js"></script>
+
+	</head>
+	<body onLoad="slide1()">
+		<div id="container-fluid">
+			<header>
+				<section class='contenu'>
+					<div id="entete">
+						<img src='images/logo.png'>					
+						<form id="recherche">
+							<input id="inputRecherche" placeholder="Recherche" type='text'>
+							<label for='inputRecherche' for='inputRecherche'>
+								<i class="fa fa-search"></i>
+							</label>
+						</form>
+						
+					</div>
+					<div id='burger'>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+					<nav id="menuPrincipal">
+						<ul class="listNav">
+               				<li>
+               					<a href="#">
+               						<i class="fa fa-home"></i>
+									<span>Actualités</span>
+								</a>
+               				</li>
+                			<li>
+                				<a href="#">
+                					<i class="fa fa-university"></i>
+									<span>Programme</span>
+								</a>
+                			</li>
+                			<li>
+                				<a href="#">
+	                				<i class="fa fa-users"></i>
+									<span>L'équipe</span>
+								</a>
+	                		</li>
+	                		<li>
+	                			<a href="#">
+	                				<i class="fa fa-language"></i>
+									<span>Étudiants & Projets</span>
+								</a>
+	                		</li>
+	               			<li>
+	               				<a href="#">
+	               					<i class="fa fa-info-circle"></i>
+									<span>Stages & Emplois</span>
+								</a>
+	               			</li>
+	           			</ul>
+					</nav>
+				</section>
+			</header>
+			<main>
+				<div id="contenant">
+					<section id="entete_contenant">
+						<img id="slide">
+						<div id="texte_enteteContenant">
+							<h3>Les laboratoires du TIM offrent un milieu de travail stimulant, convivial et à la fine pointe de la technologie.</h3>
+							<p>Cinq laboratoires de 25 ordinateurs sont mis à la disposition de nos étudiants pendant et à l’extérieur des heures de cours. Pour rester à la fine pointe de la technologie, chaque laboratoire est renouvelé régulièrement. Depuis quelques années, nous privilégions l’achat d’ordinateurs de type « iMac » qui assurent une plus grande polyvalence en permettant à la fois de travailler dans l’environnement Mac et Windows. Un de nos laboratoires est équipé d’ordinateurs configurés spécialement pour le développement 3D.</p>
+						
+							<div class="anim_ecrire">
+								<div>
+									<p><i class="fa fa-graduation-cap" aria-hidden="true"></i>
+									Des labos performants et accessibles<span id="anim1">&nbsp;</span></p>
+								</div>
+								<div>
+									<p><i class="fa fa-graduation-cap" aria-hidden="true"></i>
+									Des logiciels actuels<span id="anim2">&nbsp;</span></p>
+								</div>
+								<div>
+									<p><i class="fa fa-graduation-cap" aria-hidden="true"></i>
+									Des équipements spécialisés<span id="anim3">&nbsp;</span></p>
+								</div>
+								
+							</div>
+						</div>
+					</section>
+					<section class="leProgramme">
+						<hgroup>
+							<h2>Programme</h2>
+							<h3>Le programme Techniques d’intégration multimédia (TIM) s’adresse à vous si vous êtes passionnés des technologies!</h3>
+						</hgroup>
+						<img src="images/grilleCours_2014.png">
+						<p>Vous y apprendrez à exercer la profession d’intégrateurs multimédia ou Web dont le travail consiste essentiellement à concevoir, à assembler et à intégrer les différents éléments de contenu (textes, images, animations, vidéo, son) d’une application multimédia (site Web ou jeu électronique). Vous apprendrez à programmer les fonctionnalités permettant l’interactivité de cette application, en vue d’assurer son bon fonctionnement ainsi qu’une navigation efficace et conviviale.</p>
+					</section>
+					<section class="leProgramme">
+						<hgroup>
+							<h2>Les champs de compétence</h2>
+							<h3>Les cours du programme sont subdivisés en 5 grands champs de compétences :</h3>
+						</hgroup>
+						<ul>
+							<li>
+								<h2 class="jaune taille">Environnement professionnel</h2>
+								<p>Dans ces cours, vous développerez une vision globale du multimédia et une bonne connaissance de l’industrie, de la fonction de travail d’un intégrateur multimédia, du marché et des conditions de travail;</p>
+							</li>
+							<li>
+								<h2 class="orange_ taille">Création de contenu numérique</h2>
+								<p>Dans ces cours, vous apprendrez à exploiter les fonctionnalités des principaux logiciels utilisés dans l’industrie (Photoshop, Illustrator, Flash, Maya, AfterEffect, etc.), pour modifier ou créer les médias numériques composant une application multimédia (images, son, animations 2D et 3D, vidéos, etc.) ;</p>
+							</li>
+							<li>
+								<h2 class="mauve taille">Conception</h2>
+								<p> Dans ces cours, vous apprendrez à concevoir le design des interfaces et l’interactivité d’un produit multimédia en répondant à des exigences et des normes d’utilisabilité et d’accessibilité ainsi qu’aux besoins des futurs usagers. Vous apprendrez également à formaliser les documents nécessaires à leur production (scénarimage, échéancier de production, etc.);</p>
+							</li>
+							<li>
+								<h2 class="bleu taille">Programmation</h2>
+								<p>Dans ces cours, vous apprendrez à programmer les fonctionnalités permettant l’interactivité des applications multimédias et à optimiser les composantes pour la diffusion sur différents supports (Web, supports mobiles, etc.). Vous explorerez plusieurs langages de programmation tels que : HTML, CSS, JavaScript, ActionScript, PHP, jQuery, etc.;</p>
+							</li>
+							<li>
+								<h2 class="vert taille">Intégration</h2>
+								<p>Dans les cours d’intégration, vous apprendrez à intégrer de façon artistique et cohérente les composantes d’un projet multimédia interactif. En équipe de production, vous serez appelés à élaborer, à concevoir et à réaliser des projets multimédias dans leur globalité ainsi que les documents nécessaires à leur production.</p>
+							</li>
+						</ul>
+					</section>
+					<section class="leProgramme">
+						<hgroup>
+							<h2>Liste des cours</h2>
+							<h3>La formation spécifique en Techniques d’intégration multimédia comprend 33 cours.</h3>
+						</hgroup>
+						<nav id="sessionNav">
+							<ul>
+								<li class="margeMenu"><a href="#">Session 1</span></a>
+									<ul class="sub_menu">
+										<li><a class="subCurrent" href="#">Environnement Professionnel</a></li>
+										<li><a href="#">Animation</a></li>
+										<li><a href="#">Image Numérique 1</a></li>
+										<li><a href="#">Design Graphique 1</a></li>
+										<li><a href="#">Initiation à la Programmation</a></li>
+										<li><a href="#">Création Web</a></li>
+									</ul>
+								</li>
+								
+								<li class="margeMenu"><a href="#">Session 2</a>
+									<ul class="sub_menu">
+										<li><a class="subCurrent" href="#">Méthodologie de Recherche <br><span>Médiatique</span></a></li>
+										<li><a href="#">Environnement Informatique</a></li>
+										<li><a href="#">Image Numérique 2</a></li>
+										<li><a href="#">Design Graphique 2</a></li>
+										<li><a href="#">Programmation d'Animation 1</a></li>
+										<li><a href="#">Programmation Web 1</a></li>
+									</ul>
+								</li>
+								
+								<li class="margeMenu correctionMarge"><a href="#">Session 3</a>
+									<ul class="sub_menu">
+										<li><a class="subCurrent" href="#">Création 3D-1</a></li>
+										<li><a href="#">Création Vidéo 1</a></li>
+										<li><a href="#">Design d'Interfaces</a></li>
+										<li><a href="#">Éléments Médiatiqueset Bases de <br><span>Données</span></a></li>
+										<li><a href="#">Programmation d'Animation 2</a></li>
+										<li><a href="#">Programmation Web 2</a></li>
+									</ul>
+								</li>
+								
+								<li class="margeMenu"><a href="#">Session 4</a>
+									<ul class="sub_menu">
+										<li><a class="subCurrent" href="#">Création 3D-2</a></li>
+										<li><a href="#">Conception Sonore</a></li>
+										<li><a href="#">Scénarisation</a></li>
+										<li><a href="#">Assemblage de Jeu</a></li>
+										<li><a href="#">Programmation d'Animation 3</a></li>
+										<li><a href="#">Programmation Web 3</a></li>
+									</ul>
+								</li>
+								
+								<li class="margeMenu"><a href="#">Session 5</a>
+									<ul class="sub_menu">
+										<li><a class="subCurrent" href="#">Création 3D-3</a></li>
+										<li><a href="#">Développement de Jeu</a></li>
+										<li><a href="#">Gestion d'un Projet Multimédia</a></li>
+										<li><a href="#">Communication et Dynamique <br><span>d'une Équipe de Production</span></a></li>
+										<li><a href="#">Production Web</a></li>
+									</ul>
+								</li>
+								
+								<li class="margeMenu"><a href="#">Session 6</a>
+									<ul class="sub_menu">
+										<li><a class="subCurrent" href="#">Création Vidéo 2</a></li>
+										<li><a href="#">Programmation et Veille<br><span>Technologique</span></a></li>
+										<li><a href="#">Projet de Fin d'Études</a></li>
+										<li><a href="#">Stage en Milieu de Travail</a></li>
+									</ul>
+								</li>
+							</ul>
+						</nav>
+					</section>
+				</div>
+			</main>
+			<footer>
+				<section id="piedDePage">
+					<div id="entete_footer">
+						<nav id="reseauSociaux">
+							<h2>Suivez-nous</h2>
+							<ul class="icons">
+								<li class="facebook"><a href="https://www.facebook.com/TIM-Maisonneuve-page-officielle-153863651336863/" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
+								<li class="youtube"><a href="https://www.youtube.com/user/TIMcreation3D/" target="_blank"><i class="fa fa-youtube-square"></i></a></li>
+								<li class="email"><a href="#"><i class="fa fa-envelope-square"></i></a></li>    
+							</ul>
+						</nav>
+						<div class="flip">
+							<i class="fa fa-info-circle" aria-hidden="true"></i>
+							<div class='back'><p class="informationFlip">Johanne Massé (514) 254-7131<br> poste 4385
+											  <br>Xavier Marchand (514) 254-7131<br> poste 4383</p>
+							</div>
+							<div class='front'><p class="informationFlip">3800 rue Sherbrooke Est 
+											   <br>Montréal (Québec)
+											   <br>H1X 2A2</p>
+							</div>
+						</div>
+						<img src="images/logo_college_de_maisonneuve.png">
+					</div>
+					<p id="copyright">Site web développé par Tati Garrafa</p>
+				</section>
+			</footer>
+		</div><!-- fin div container-fluid-->
+	</body>
+</html>

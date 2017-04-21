@@ -1,0 +1,119 @@
+/* For devices bigger than 200px and smaller than 600px */
+@media screen and (min-width: 200px) and (max-width: 599px) {
+  .flip {
+    position: relative;
+    height: 100px;
+    border: 2px solid #aaa;
+    transform-style: preserve-3d;
+  }
+  .flip .informationFlip {
+    text-align: center;
+  }
+  .flip div {
+    position: absolute;
+    padding: 5px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+  }
+  .front {
+    color: #fff;
+    transform: rotateY(0);
+    backface-visibility: hidden;
+  }
+  .back {
+    color: #fff;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+  }
+  .flip.flipClick .back {
+    transform: rotateY(360deg);
+  }
+  .flip.flipClick .front {
+    transform: rotateY(180deg);
+  }
+}
+/* For devices bigger than 600px and smaller than 1100px */
+@media screen and (min-width: 600px) and (max-width: 1099px) {
+  .flip {
+    position: relative;
+    width: 300px;
+    height: 100px;
+    margin-top: 130px;
+    border: none;
+    transform-style: preserve-3d;
+  }
+  .flip .informationFlip {
+    text-align: center;
+  }
+  .flip div {
+    position: absolute;
+    padding: 5px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+  }
+  .front {
+    color: #fff;
+    transform: rotateY(0);
+    backface-visibility: hidden;
+  }
+  .back {
+    color: #fff;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+  }
+  .flip.flipClick .back {
+    transform: rotateY(360deg);
+  }
+  .flip.flipClick .front {
+    transform: rotateY(180deg);
+  }
+}
+/* For devices bigger than 1100px */
+@media screen and (min-width: 1100px) {
+  .flip {
+    position: relative;
+    width: 300px;
+    height: 100px;
+    margin-top: 130px;
+    border: none;
+    transform-style: preserve-3d;
+  }
+  .flip .informationFlip {
+    text-align: center;
+  }
+  .flip i {
+    margin-left: 45px;
+    margin-top: 11px;
+  }
+  .flip div {
+    position: absolute;
+    padding: 5px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+  }
+  .front {
+    color: #fff;
+    transform: rotateY(0);
+    backface-visibility: hidden;
+  }
+  .back {
+    color: #fff;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+  }
+  .flip.flipClick .back {
+    transform: rotateY(360deg);
+  }
+  .flip.flipClick .front {
+    transform: rotateY(180deg);
+  }
+}

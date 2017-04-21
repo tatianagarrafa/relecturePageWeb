@@ -1,0 +1,390 @@
+//variables pour les couleurs
+@couleur_menu_fond : #444;
+@couleur_menu_avant : #fff;
+@couleur_menu_fond_pale : lighten(@couleur_menu_fond, 10%);
+@couleur_icon_input: #ffcd00;
+
+
+//variables pour les espaces
+@distance_menu_choix : 8px;
+@distance_icon_input: 9px 5px;
+@distance_menuPrincipal: 5px;
+@distance_icon_menu: 5px;
+@distance_img: 5px 0;
+@distance_p: 5px 0 10px 0;
+@distance_sessionNav: 10px 0;
+
+body {
+	font-family: roboto;
+	color : #fff;	
+	background-color : #000;
+	background-image: linear-gradient(to right, #000, #281800 50%, #5D3800 85%);
+}
+
+#container-fluid{
+	width : 95%;
+}
+
+header{
+  	width: 95%;
+}
+
+p{
+	line-height: 20px;
+}
+
+h1{
+  	font-size: 1.4em;
+}
+
+h2{
+ 	font-family: 'Open Sans', sans-serif;
+ 	font-size: 1.2em;
+}
+
+h3{
+  	font-size: .8em;
+}
+
+/*css header*/
+.contenu{
+	width : 95%%;
+	padding : 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	
+
+	img{
+		width: 90%;
+	}
+
+	/*css input*/
+	#recherche{
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		width: 95%;
+
+		#inputRecherche{
+		height: 20px;
+		width: 240px;
+		margin: 5px 0;
+		}
+
+		label{
+			flex: 0 1 20px;
+		}
+
+		i{
+			padding: @distance_icon_input;
+			color: @couleur_icon_input;
+		}
+
+	}//fin recherche
+	
+	#menuPrincipal{
+		width: 40px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin-top: @distance_menuPrincipal;
+		overflow: hidden;
+		transition-property: width, transform;
+		transition-duration: 1s;
+		transition-function-timing: ease-in-out;
+
+		.listNav{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+
+			li{
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				padding: @distance_menu_choix;
+				border: 1px solid #ffcd00;
+				border-radius: 5px;
+
+				a {
+					text-decoration: none;
+					display: block;
+					color: @couleur_menu_avant;
+					font-size: .8em;
+					flex: 0 0 20px;
+					display: flex;
+					flex-direction: row;
+					justify-content: flex-start;
+					white-space: nowrap;
+				}
+
+				a:hover{
+					color: @couleur_icon_input;
+				}
+
+				i{	
+					flex: 0 0 50px;
+					margin-right: @distance_icon_menu;
+					margin-top: @distance_icon_menu;
+					padding-left: @distance_icon_menu;
+				}
+				span{
+					flex: 1;
+				}
+				
+
+			}//fin li
+
+			li:hover{
+				border: 1px solid #fff;
+			}
+
+		}//fin .listNav
+
+		&.fermeture {
+			width : 190px;
+		}
+	}//fin #menuPrincipal
+
+	
+
+}//fin contenu
+
+/*css main*/
+#contenant{
+	width : 90%;
+	padding : 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	#entete_contenant{
+		width: 95%;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+
+		#slide{
+			width: 90%;
+		}
+
+		h3{
+			color: @couleur_icon_input;
+			font-size: .9em;
+			margin: @distance_img;
+		}
+
+		p{
+			font-size: .8em;
+			margin-bottom: 10px;
+		}
+
+		.anim_ecrire{	
+			background-color: @couleur_icon_input;
+			margin-top: 10px;
+			padding: 8px;
+			width: 250px;
+			border-radius: 5px;
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+
+			div{
+				display: flex;
+				flex-direction: row;
+				justify-content: flex-start;
+			}
+
+			p{
+				white-space: nowrap;
+			}
+
+			i{
+				font-size: .9em;
+				margin-right: 7px;
+			}
+		}
+
+	}//fin  #entete_contenant
+
+	.leProgramme{
+		img{
+			width: 90%;
+			margin: @distance_img;
+		}
+
+		p{
+			font-size: .9em;
+			width: 95%;
+			margin: @distance_p;
+		}
+	
+		h2{
+			font-family: 'Open Sans', sans-serif;
+			color: @couleur_icon_input;
+			margin: @distance_img;
+		}
+	
+		h3{
+			width: 95%;
+			line-height: 120%;
+		}
+	
+		.taille{
+			font-size: .8em;
+		}
+	
+		.jaune{
+			color: #ffff00;
+		}
+	
+		.orange_{
+			color: #ff8a16;
+		}
+	
+		.mauve{
+			color: #a68aff;
+		}
+	
+		.bleu{
+			color: #17bcff;
+		}
+	
+		.vert{
+			color: #1adc00;
+		}
+	
+		/*css nav session*/
+		#sessionNav{
+			text-decoration: none;
+				color: #fff;
+		
+				ul{
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					background-color: @couleur_icon_input;
+					width: 89px;
+					border-radius: 5px;
+					margin: @distance_sessionNav;
+		
+					.margeMenu{
+						display: inline-block;
+						padding: 5px;
+						position: relative;
+						width: 78px;
+						border-top: 1px solid #fff;
+			
+						a{
+							font-size: .9em;
+							color: #fff;
+							text-decoration: none;
+							margin-left: 5px;
+						}
+					}//fin margemMenu
+		
+		
+				}//fin ul
+		
+				li:nth-child(1){
+					border: none;
+				}
+		
+				ul li ul.sub_menu {
+					position: absolute;
+					width: 180px;
+					top: 10px;
+					left: 80px;
+					margin: 0;
+					padding: 0;
+					background-color : #000;
+					background-image: linear-gradient(to right, #000, #281800 50%, #5D3800 85%);
+					border-top: 5px solid #ffcd00;
+					border-radius: 10px;
+					display: none;
+					z-index:999999;
+		
+					li{
+						padding: 3px;
+		
+					a{
+						white-space: nowrap;
+						width: 150px;
+						padding:12px;
+						font-size: .7em;
+						color:#fff;
+						text-decoration: none;
+			
+						span{
+							margin-left: 20px;
+						}
+		
+					}
+		
+					a:hover{
+						color: @couleur_icon_input;
+					}
+		
+					}//fin li submenu
+		
+				}//fin sumbemu
+		
+		}//fin sessionNav
+
+	}//fin .leProgramme
+
+}//fin contenant
+
+/*css footer*/
+#piedDePage{
+	width : 95%;
+	padding : 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	h2{
+		font-family: 'Open Sans', sans-serif;
+		color: @couleur_icon_input;
+		margin: @distance_img;
+	}
+
+	#reseauSociaux{
+		margin-top: 60px;
+		width: 95%;
+
+		ul{
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+
+			li{
+				margin: 10px 30px;
+
+				a{
+					font-size: 2em;
+					color: #fff;
+					text-decoration: none;
+					margin-left: 5px;
+				}
+
+				a:hover{
+					color: @couleur_icon_input;
+				}
+			}	
+		} //fin ul
+	}//fin #reseauSociaux
+
+	img{
+		width: 90%;
+		margin: 20px 0;
+	}
+
+	p{
+		font-size: .7em;
+		margin: @distance_img;
+	}
+}//fin #piedDePage
+
+

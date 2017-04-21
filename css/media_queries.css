@@ -1,0 +1,13 @@
+/* Media Queries
+-------------------------------------------------------------*/
+/* For devices bigger than 200px and smaller than 480px */
+@media screen and (min-width: 200px) and (max-width: 479px) {
+	.leProgramme #sessionNav ul{
+		margin-left: 20%;
+		width: 100px;
+	}
+			
+	.margeMenu{
+		width: -10%;
+	}/*fin margemMenu*/
+}

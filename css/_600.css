@@ -1,0 +1,291 @@
+body {
+  font-family: roboto;
+  color: #fff;
+  background-color: #000;
+  background-image: linear-gradient(to right, #000000, #281800 50%, #5d3800 85%);
+}
+#container-fluid {
+  width: 95%;
+}
+header {
+  width: 95%;
+}
+p {
+  line-height: 20px;
+  margin-left: 20px;
+}
+h1 {
+  font-size: 1.4em;
+  margin-left: 20px;
+}
+h2 {
+  font-size: 1.2em;
+  margin-left: 20px;
+}
+h3 {
+  font-size: .8em;
+  margin-left: 20px;
+}
+/*css header*/
+.contenu {
+  width: 95%%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /*css input*/
+}
+.contenu img {
+  width: 90%;
+  height: 90%;
+}
+.contenu #recherche {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 95%;
+}
+.contenu #recherche #inputRecherche {
+  height: 20px;
+  width: 600px;
+  margin: 5px 0;
+}
+.contenu #recherche label {
+  flex: 0 1 20px;
+}
+.contenu #recherche i {
+  padding: 9px 5px;
+  color: #ffcd00;
+}
+.contenu #burger {
+  visibility: hidden;
+}
+.contenu #menuPrincipal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 5px;
+  width: 100%;
+}
+.contenu #menuPrincipal .listNav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.contenu #menuPrincipal .listNav li {
+  padding: 8px;
+  width: 95%;
+  border: none;
+}
+.contenu #menuPrincipal .listNav li a {
+  text-decoration: none;
+  display: block;
+  color: #ffffff;
+  font-size: .8em;
+  white-space: nowrap;
+}
+.contenu #menuPrincipal .listNav li a:hover {
+  color: #ffcd00;
+  border: none;
+}
+.contenu #menuPrincipal .listNav li i {
+  margin-right: 5px;
+}
+.contenu #menuPrincipal .listNav li:hover {
+  border: none;
+}
+/*css main*/
+#contenant {
+  width: 95%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#contenant #entete_contenant {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+#contenant #entete_contenant #slide {
+	display: block;
+  width: 90%;
+  margin-left: 10%;
+}
+#contenant #entete_contenant h3 {
+  color: #ffcd00;
+  font-size: .9em;
+  text-align: center;
+  margin: 10px 50px;
+}
+#contenant #entete_contenant p {
+  font-size: .8em;
+  margin-bottom: 10px;
+  margin-left: 50px;
+}
+#contenant #entete_contenant .anim_ecrire {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-left: 50px;
+  width: 540px;
+}
+#contenant #entete_contenant .anim_ecrire div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-left: 10%;
+}
+#contenant #entete_contenant .anim_ecrire p {
+  margin-left: 10px;
+}
+#contenant #entete_contenant .anim_ecrire i {
+  margin-left: 50px;
+  font-size: 1em;
+}
+#contenant .leProgramme {
+  /*css nav session*/
+}
+#contenant .leProgramme img {
+	display: block;
+  width: 90%;
+  margin-left: 10%;
+}
+#contenant .leProgramme p {
+  font-size: .9em;
+  width: 95%;
+  margin: 10px 50px;
+}
+#contenant .leProgramme h2 {
+  font-family: 'Open Sans', sans-serif;
+  color: #ffcd00;
+  margin: 10px 50px;
+}
+#contenant .leProgramme h3 {
+  width: 95%;
+  line-height: 120%;
+  margin: 10px 50px;
+}
+#contenant .leProgramme .taille {
+  font-size: .8em;
+}
+#contenant .leProgramme .jaune {
+  color: #ffff00;
+}
+#contenant .leProgramme .orange_ {
+  color: #ff8a16;
+}
+#contenant .leProgramme .mauve {
+  color: #a68aff;
+}
+#contenant .leProgramme .bleu {
+  color: #17bcff;
+}
+#contenant .leProgramme .vert {
+  color: #1adc00;
+}
+#contenant .leProgramme #sessionNav {
+  text-decoration: none;
+  color: #fff;
+  margin: 10px 50px;
+}
+#contenant .leProgramme #sessionNav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #ffcd00;
+  width: 550px;
+  padding: 10px;
+  border-radius: 5px;
+}
+#contenant .leProgramme #sessionNav ul .margeMenu {
+  position: relative;
+  width: 80px;
+  border-top: none;
+  border-left: 1px solid #fff;
+}
+#contenant .leProgramme #sessionNav ul .margeMenu a {
+  font-size: 1em;
+  color: #fff;
+  text-decoration: none;
+  margin-left: 5px;
+}
+#contenant .leProgramme #sessionNav li:nth-child(1) {
+  border: none;
+}
+#contenant .leProgramme #sessionNav ul li ul.sub_menu {
+  position: absolute;
+  width: 185px;
+  top: 35px;
+  left: -10px;
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  background-image: linear-gradient(to right, #000000, #281800 50%, #5d3800 85%);
+  border-top: 5px solid #ffcd00;
+  border-radius: 10px;
+  display: none;
+  z-index: 999999;
+}
+#contenant .leProgramme #sessionNav ul li ul.sub_menu li {
+  padding: 3px;
+}
+#contenant .leProgramme #sessionNav ul li ul.sub_menu li a {
+  white-space: nowrap;
+  width: 150px;
+  padding: 12px;
+  font-size: .7em;
+  color: #fff;
+  text-decoration: none;
+  margin-left: -5px;
+}
+#contenant .leProgramme #sessionNav ul li ul.sub_menu li a span {
+  margin-left: 20px;
+}
+#contenant .leProgramme #sessionNav ul li ul.sub_menu li a:hover {
+  color: #ffcd00;
+}
+/*css footer*/
+#piedDePage {
+  width: 95%;
+  padding: 10px;
+}
+#piedDePage h2 {
+  font-family: 'Open Sans', sans-serif;
+  color: #ffcd00;
+}
+#piedDePage #entete_footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#piedDePage #reseauSociaux {
+  margin-top: 120px;
+  width: 40%;
+}
+#piedDePage #reseauSociaux ul {
+  margin-bottom: 20px;
+}
+#piedDePage #reseauSociaux ul li {
+  margin: 0 10px;
+}
+#piedDePage #reseauSociaux ul li a {
+  font-size: 2.5em;
+  color: #fff;
+  text-decoration: none;
+  margin-left: 5px;
+}
+#piedDePage #reseauSociaux ul li a:hover {
+  color: #ffcd00;
+}
+#piedDePage img {
+  margin-top: 170px;
+  width: 30%;
+  height: 30%;
+}
+#piedDePage p {
+  font-size: .7em;
+  margin: 5px 0;
+}
